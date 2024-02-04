@@ -1,14 +1,14 @@
 import React from "react";
 import Showcase from "../../components/layouts/showcase/Showcase.js";
-// import ProductListing from "../../components/layouts/product-listing/ProductListing";
+import ProductListing from "../../components/layouts/product-listing/ProductListing.js";
 // import Footer from '../../components/layouts/footer/Footer';
 
 const HomePage = () => {
     return (
         <section>
             <Showcase />
-            {/* <ProductListing />
-            <Footer /> */}
+             <ProductListing />
+            {/*<Footer /> */}
         </section>
     )
 }

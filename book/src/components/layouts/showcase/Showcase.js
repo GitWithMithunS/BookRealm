@@ -1,7 +1,7 @@
 import React from "react";
 import './showcase.styles.css'
 import Navbar from "../navbar/Navbar.js";
-// import SearchInputForm from "../../forms/searchInputForm/SearchInputForm";
+import SearchInputForm from "../../form/searchInputForm/Searchinputform.js";;
 
 const Showcase = () => {
     return (
@@ -10,10 +10,10 @@ const Showcase = () => {
             
             <div className="overlay"></div>
             <div className="showcase-content">
-                <h1>Best <span className="text-primary">Books </span>Available</h1>
-                <p>Buy quality books at cheaper price</p>
+                <h1>The <span className="text-primary">Book </span>You Need</h1>
+                <p>Best Books for all your needs</p>
                 
-                {/* <SearchInputForm darkTheme={ true }/> */}
+                <SearchInputForm darkTheme={ true }/>
             </div>
         </section>
     )

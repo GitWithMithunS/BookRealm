@@ -8,8 +8,8 @@
 }
 
 :root{
-    --primary-color: #fb995d;
-    --primary-color-bright: #fa7727;
+    --primary-color: #EFC64D;
+    --primary-color-bright: #2D0B09;
     --white-color: #fff;
 }
 
@@ -49,7 +49,7 @@ span{
     color: #fff;
     text-decoration: none;
     margin-top: 2rem;
-    box-shadow: 2px 2px 5px #ddd;
+    box-shadow: 2px 2px 5px #EFC64D;
     transition: 0.2s ease-in;
     border: none;
     font-family: Chivo Mono;
@@ -57,5 +57,5 @@ span{
 }
 
 .button-primary:hover{
-    background-color: #222;
+    background-color: #2D0B09;
 }
