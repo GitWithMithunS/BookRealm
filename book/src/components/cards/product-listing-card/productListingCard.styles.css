@@ -1,0 +1,56 @@
+.product-listing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.product-listing-img-container {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product-listing-img-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-listing-details {
+    text-align: center;
+}
+
+.product-listing-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-listing-details p {
+    margin: 5px 0;
+}
+
+.product-listing-details a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--primary-color-bright);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-listing-details a:hover {
+    background-color: var(--primary-color);
+}
+
+.listings-wrapper {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll if contents exceed parent width */
+    padding: 20px; /* Optional: Add padding as needed */
+}
