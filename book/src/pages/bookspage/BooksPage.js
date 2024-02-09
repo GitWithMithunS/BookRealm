@@ -3,10 +3,7 @@ import './bookpage.style.css'
 import Navbar from '../../components/layouts/navbar/Navbar';
 import SearchInputForm from "../../components/form/searchInputForm/Searchinputform";
 import ProductListing from "../../components/layouts/product-listing/ProductListing";
-
-
-
-// import Footer from '../../components/layouts/footer/Footer';
+import Footer from '../../components/layouts/footer/footer';
 
 const BooksPage = () => {
     return (
@@ -19,7 +16,7 @@ const BooksPage = () => {
             </div>
 
             <ProductListing/>
-            {/* <Footer /> */} 
+            <Footer /> 
         </section>
     )
 }
