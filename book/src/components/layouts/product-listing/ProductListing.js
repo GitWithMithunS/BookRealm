@@ -2,7 +2,6 @@ import React from 'react';
 import './productListing.styles.css';
 import ProductListingCard from '../../cards/product-listing-card/ProductListingCard';
 // import { BookData } from '../../../util/BookData';
-import ProductImage from '../../../assets/books-images/1.jpg'
 
 const ProductListing = () => {
     return(
