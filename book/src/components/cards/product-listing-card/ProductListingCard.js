@@ -16,7 +16,9 @@ const ProductListingCard = ({ bookData }) => {
                 <p className='pricing'>&#8377;10000</p>
             </div>
             <div className="card-btn-container">
+                <button className="btn-addcart">
                 <Link to={'#'} className="product-listing-button">Add To Cart</Link>
+                </button>
             </div>
         </div>
     )

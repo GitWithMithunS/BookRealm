@@ -1,16 +1,17 @@
 import React from "react";
-// import Navbar from '../../components/layouts/navbar/Navbar';
-// import DetailsSection from "../../components/layouts/details-section/DetailsSection";
+import Navbar from '../../components/layouts/navbar/Navbar';
+import { DetailsSection } from "../../components/layouts/detailsSection/DetailsSection";
+
 // import Footer from '../../components/layouts/footer/Footer';
 
 const BookDetails = () => {
     return (
         <section>
-            <h1> detailspage</h1>
-           {/* <Navbar darkTheme={ true } />
+         <Navbar darkTheme={ true } /> 
+            <DetailsSection/>
 
-           <DetailsSection />
-           <Footer /> */}
+
+           {/* <Footer /> */}
         </section>
     )
 }
