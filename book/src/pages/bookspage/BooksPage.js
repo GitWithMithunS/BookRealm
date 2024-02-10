@@ -2,11 +2,13 @@ import React from "react";
 import './bookpage.style.css'
 import Navbar from '../../components/layouts/navbar/Navbar';
 import SearchInputForm from "../../components/form/searchInputForm/Searchinputform";
+
 import { ProductListingAll } from "../../components/layouts/productlistingall/ProductListingAll";
 
 
 
 // import Footer from '../../components/layouts/footer/Footer';
+
 
 const BooksPage = () => {
     return (
@@ -20,6 +22,7 @@ const BooksPage = () => {
 
             <ProductListingAll/>
             {/* <Footer /> */} 
+
         </section>
     )
 }
