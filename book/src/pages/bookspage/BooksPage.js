@@ -2,8 +2,13 @@ import React from "react";
 import './bookpage.style.css'
 import Navbar from '../../components/layouts/navbar/Navbar';
 import SearchInputForm from "../../components/form/searchInputForm/Searchinputform";
-import ProductListing from "../../components/layouts/product-listing/ProductListing";
-import Footer from '../../components/layouts/footer/footer';
+
+import { ProductListingAll } from "../../components/layouts/productlistingall/ProductListingAll";
+
+
+
+// import Footer from '../../components/layouts/footer/Footer';
+
 
 const BooksPage = () => {
     return (
@@ -15,8 +20,9 @@ const BooksPage = () => {
                 <SearchInputForm darkTheme={false} />
             </div>
 
-            <ProductListing/>
-            <Footer /> 
+            <ProductListingAll/>
+            {/* <Footer /> */} 
+
         </section>
     )
 }
