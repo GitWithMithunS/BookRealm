@@ -1,39 +1,22 @@
 import React from "react";
 import './productlistingall.style.css'
 import ProductListingCard from "../../cards/product-listing-card/ProductListingCard";
+import { book } from "../../../util/BookData";
 
 export const ProductListingAll = () => {
   return (
     <section>
         <div className="container">
             <div className="grid-container">
+              {book.map((book) => {
+                return (
                 <div className="grid-item">
-                  <ProductListingCard/>
+                  <ProductListingCard bookData={book}/>
                 </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
-                <div className="grid-item">
-                  <ProductListingCard/>
-                </div>
+                )
+              })}
+
+
             </div>
         </div>
     </section>

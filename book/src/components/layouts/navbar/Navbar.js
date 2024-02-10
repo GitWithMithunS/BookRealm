@@ -11,8 +11,8 @@ export default function Navbar({darkTheme}) {
                 <Link to="/" className="logo">Book<span className="text-primary">Realm</span></Link>
         
         <nav className="nav-link-container">
-          <a href="#" className='nav-links'>Home</a>
-          <a href="#" className='nav-links'>Books</a>
+          <Link to="/" className='nav-links'>Home</Link>
+          <Link to="/books" className='nav-links'>Books</Link>
         </nav>
         </div>
     </section>

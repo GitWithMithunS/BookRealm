@@ -20,15 +20,17 @@
     justify-content: center; 
     height: 500px;
     border: 1px solid #ddd;
-    box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
--webkit-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
--moz-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+    box-shadow: 7px 11px 13px 0px rgba(45,11,9,0.56);
+-webkit-box-shadow: 7px 11px 13px 0px rgba(45,11,9,0.56);
+-moz-box-shadow: 7px 11px 13px 0px rgba(45,11,9,0.56);
 }
 .book-detail-container{
     font-size: 1.5rem;
+
 }
-.book-details-container p{
+.book-detail-container p{
     padding: 1rem 0;
+
 }
 .book-description{
     line-height:1.7rem ;

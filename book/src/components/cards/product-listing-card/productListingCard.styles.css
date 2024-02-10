@@ -8,30 +8,28 @@
     padding: 20px;
     margin: 20px;
     background-color: #fff;
-    width: fit-content;
+    width: 100%;
+    /* justify-content: space-between; */
 }
 
 .product-listing-img-container {
     border-radius: 10px;
     overflow: hidden;
     margin: 10px 20px;
+    min-height:18rem;
 }
 
 .product-listing-img-container img {
-    width: 200px;
-    height: auto;
+    height: 250px;
+    width: auto;
     object-fit: cover;
     box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
 -webkit-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
 -moz-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
 }
 
-.product-listing-details {
-    text-align: center;
-}
-
-.product-listing-details h3 {
-    font-size: 1.5rem;
+.product-listing-details-container h3 {
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -39,18 +37,24 @@
     margin: 5px 0;
 }
 
-.product-listing-details a {
+.product-listing-details-container  {
     display: inline-block;
     padding: 8px 20px;
-    background-color: var(--primary-color-bright);
+    /* background: rgb(239,198,77);
+background: linear-gradient(90deg, rgba(239,198,77,1) 0%, rgba(45,11,9,1) 100%); */
+    /* background-color: var(--primary-color-bright); */
     color: #fff;
+    background: rgb(239,198,77);
+    background: linear-gradient(23deg, rgba(239,198,77,0.6699054621848739) 0%, rgba(45,11,9,1) 100%);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    height: 11.5rem;
 }
 
-.product-listing-details a:hover {
+.product-listing-details-conatiner:hover {
     background-color: var(--primary-color);
+ 
 }
 
 .listings-wrapper {
@@ -61,7 +65,15 @@
 .pricing{
     font-size: large;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--primary-color-bright);
+}
+.card-btn-container{
+    width: 100%;
+}
+.product-listing-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .btn-addcart{
     display: inline;
@@ -69,7 +81,10 @@
     padding: 7px 15px;
     border-radius: 5px;
     margin-top: 20px;
+    width: 70%;
     text-decoration: none;
+    
+    
 }
 .btn-addcart:hover{
     background-color: #fff;

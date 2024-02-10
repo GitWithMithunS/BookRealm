@@ -1,24 +1,24 @@
 import React from "react";
 import './productListingCard.styles.css';
 import { Link } from 'react-router-dom';
-import ProductImage from '../../../assets/books-images/1.jpg'
+
 
 
 const ProductListingCard = ({ bookData }) => {
     return (
         <div className="product-listing-card">
             <div className="product-listing-img-container">
-                <img src={ProductImage} alt="product-listing" className="product-listing-image" />
+                <img src={bookData.image} alt="product-listing" className="product-listing-image" />
             </div>
             <div className="product-listing-details-container">
-                <h3>Write fast</h3>
-                <p className="author-name">Raghav</p>
-                <p className='pricing'>&#8377;10000</p>
+                <h3>{bookData.title}</h3>
+                <p className="author-name">{bookData.authors.slice(0,80)}</p>
+                <p className='pricing'>&#8377;{bookData.price}</p>
             </div>
             <div className="card-btn-container">
-                <button className="btn-addcart">
-                <Link to={'#'} className="product-listing-button">Add To Cart</Link>
-                </button>
+               
+                <Link to={`/book-details/${bookData._id}`} className="product-listing-button"> <button className="btn-addcart">Add To Cart</button></Link>
+
             </div>
         </div>
     )
