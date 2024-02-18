@@ -45,11 +45,10 @@ span{
 .button-primary{
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: var(--primary-color-bright);
+    background-color: var(--primary-color);
     color: #fff;
     text-decoration: none;
     margin-top: 2rem;
-    box-shadow: 2px 2px 5px #EFC64D;
     transition: 0.2s ease-in;
     border: none;
     font-family: Chivo Mono;
@@ -57,5 +56,9 @@ span{
 }
 
 .button-primary:hover{
-    background-color: #2D0B09;
+    /* background-color: #2D0B09; */
+    box-shadow: 1px 1px 2px #2D0B09;
+    background-color: #fff;
+    color: var(--primary-color);
+    border: none;
 }

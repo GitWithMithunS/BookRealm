@@ -10,7 +10,7 @@ const BookDetails = () => {
     return (
         <section>
 
-         <Navbar darkTheme={ true } /> 
+         <Navbar darkTheme={true} /> 
             <DetailsSection/>
 
 
