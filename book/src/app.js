@@ -14,10 +14,12 @@ import BookDetailsPage from "./pages/bookdetailspage/BookDetails.js";
 const App = ()=> {
     return(
         <div>
-            <Routes>
+            <Routes
+            
+            >
                 <Route path="/" element={<HomePage />} />
                 <Route path="/books" element={<BooksPage />} />
-                {/* <Route path="/cart" element={<CartPage />} />
+                {/* <Route path="/cart" element={<CartPage />} / >
                 <Route path="/search" element={<SearchPage />} /> */}
                 <Route path="/book-details/:id" element={<BookDetailsPage/>} />
                 {/* <Route path="/signup" element={<SignUp />} />

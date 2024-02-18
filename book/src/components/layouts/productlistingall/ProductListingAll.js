@@ -16,7 +16,6 @@ export const ProductListingAll = () => {
                 )
               })}
 
-
             </div>
         </div>
     </section>
