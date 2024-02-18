@@ -33,7 +33,7 @@ export const DetailsSection = () => {
                 <p><b>Book Length : </b>{bookdata.book_length}</p>
                 <h3> &#8377;{bookdata.price}</h3>
                 {/* <a href="#" className='cart'>Add to cart</a> */}
-                <a href="#" className='cart-btn'>Add to cart</a>
+                <a href="#" className='button-primary'>Add to cart</a>
             </div>
         </div>
     </div>
