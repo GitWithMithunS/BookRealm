@@ -4,6 +4,7 @@ import Navbar from '../../components/layouts/navbar/Navbar';
 import SearchInputForm from "../../components/form/searchInputForm/Searchinputform";
 
 import { ProductListingAll } from "../../components/layouts/productlistingall/ProductListingAll";
+import Footer from "../../components/layouts/footer/footer";
 
 
 
@@ -21,7 +22,7 @@ const BooksPage = () => {
             </div>
 
             <ProductListingAll/>
-            {/* <Footer /> */} 
+            <Footer/> 
 
         </section>
     )

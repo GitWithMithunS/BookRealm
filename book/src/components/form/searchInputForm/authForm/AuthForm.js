@@ -16,17 +16,18 @@ export const AuthForm = ({ btnName }) => {
         console.log(password)
         console.log(username)
         const auth = getAuth(fire);
-        console.log(auth)
-        if (btnName === 'Login') {
+        // console.log(auth)
+        if (btnName === 'login') {
             signInWithEmailAndPassword(auth, email, password)
-                .then(() => {
+                .then((userCredentials) => {
                     navigate('/')
                 })
                 .catch((err) => console.log(err));
         } else {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredentials) => {
-                    console.log(userCredentials)
+                    // console.log(userCredentials)
+                    userCredentials.user.displayName = username;
                     navigate('/');
                 })
                 .catch((err) => {
