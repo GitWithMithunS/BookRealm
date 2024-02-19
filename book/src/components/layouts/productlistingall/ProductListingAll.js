@@ -10,8 +10,8 @@ export const ProductListingAll = () => {
             <div className="grid-container">
               {book.map((book) => {
                 return (
-                <div className="grid-item">
-                  <ProductListingCard bookData={book}/>
+                <div key={book.id} className="grid-item">
+                  <ProductListingCard  bookData={book}/>
                 </div>
                 )
               })}
