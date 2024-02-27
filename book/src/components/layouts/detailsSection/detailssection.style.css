@@ -41,16 +41,3 @@
     color: var(--primary-color);
     margin-bottom: 2rem;
 }
-.cart-btn{
-    display: inline;
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 4px 4px 7px #ddd;
-    transition: 0.3s ease-in;
-}
-.cart-btn:hover{
-    background-color: #fff;
-    color: var(--primary-color);
-}

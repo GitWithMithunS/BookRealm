@@ -40,7 +40,7 @@
 }
 
 .nav-links-dark{
-    color: #333;
+    color: #2D0B09;
 }
 
 .nav-links:hover{
@@ -55,8 +55,8 @@
     /* background-color: #2D0B09; */
     /* background: rgb(239,198,77);
 background: radial-gradient(circle, rgba(239,198,77,1) 8%, rgba(45,11,9,1) 100%); */
-background: rgb(239,198,77);
-background: radial-gradient(circle, rgba(239,198,77,0.7399334733893557) 8%, rgba(45,11,9,0.8799894957983193) 100%);}
+background: radial-gradient(circle, rgba(239,198,77,0.7399334733893557) 8%, rgba(45,11,9,0.8799894957983193) 100%);
+}
 
 .background-transparent{
     background-color: transparent;
