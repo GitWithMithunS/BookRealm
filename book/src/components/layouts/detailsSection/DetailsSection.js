@@ -16,6 +16,11 @@ export const DetailsSection = () => {
     setbookdata(newData[0])     //[0] to get the first element/object of the newbook array
   })
 
+  const handleAddToCart = () => {
+    console.log('working')
+  }
+
+
   return (
     <section className="deatil-section-container">
 
@@ -33,7 +38,7 @@ export const DetailsSection = () => {
                 <p><b>Book Length : </b>{bookdata.book_length}</p>
                 <h3> &#8377;{bookdata.price}</h3>
                 {/* <a href="#" className='cart'>Add to cart</a> */}
-                <a href="#" className='button-primary'>Add to cart</a>
+                <a href="#" onClick={handleAddToCart} className='button-primary'>Add to cart</a>
             </div>
         </div>
     </div>
