@@ -3,7 +3,7 @@ import './detailssection.style.css'
 import BookDetailsImg from '../../../assets/books-images/1.jpg'
 import { useParams } from 'react-router-dom'
 import { book } from '../../../util/BookData'
-import { UserContext, CartContext } from '../../../App';
+import { UserContext, CartContext } from '../../../app';
 
 
 export const DetailsSection = () => {
@@ -19,16 +19,16 @@ export const DetailsSection = () => {
   })
 
 
-  const handleAddToCart = () => {
-    if(user) {
-        //add to cart
-        setCartItems([...cartItems, bookData]);
-        alert(`The book ${bookData.book_name} is added to the cart`);
-    } else {
-        navigate('/login');
-        alert("Please Login or Sign up first..");
-    }
-}
+//   const handleAddToCart = () => {
+//     if(user) {
+//         //add to cart
+//         setCartItems([...cartItems, bookData]);
+//         alert(`The book ${bookData.book_name} is added to the cart`);
+//     } else {
+//         navigate('/login');
+//         alert("Please Login or Sign up first..");
+//     }
+// }
 
   return (
     <section className="deatil-section-container">
@@ -47,11 +47,7 @@ export const DetailsSection = () => {
                 <p><b>Book Length : </b>{bookdata.book_length}</p>
                 <h3> &#8377;{bookdata.price}</h3>
                 {/* <a href="#" className='cart'>Add to cart</a> */}
-
-//                 <a onClick={handleAddToCart} className="button-primary">Add To Cart</a>
-
-                <a href="#" className='button-primary'>Add to cart</a>
-
+                <a href="/cart" className='button-primary'>Add to cart</a>
             </div>
         </div>
     </div>
