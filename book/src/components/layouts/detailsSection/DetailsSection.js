@@ -13,8 +13,8 @@ export const DetailsSection = () => {
   const [bookdata,setbookdata] = useState({})
 
   useEffect(() => {
-    let newData = book.filter((book) => book._id == id)
-    console.log(newData[0])
+    let newData = book.filter((book) => book._id === id)
+    // console.log(newData[0])
     setbookdata(newData[0])     //[0] to get the first element/object of the newbook array
   })
 
