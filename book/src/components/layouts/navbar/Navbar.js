@@ -57,6 +57,7 @@
 // }
 
 
+
 import React, { useContext, useState } from 'react';
 import './navbar.styles.css';
 import { Link, useNavigate } from 'react-router-dom';
@@ -117,4 +118,3 @@ export default function Navbar({ darkTheme, darkTextTheme }) {
     </section>
   )
 }
-

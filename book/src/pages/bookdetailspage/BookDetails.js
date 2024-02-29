@@ -3,7 +3,7 @@ import Navbar from '../../components/layouts/navbar/Navbar';
 
 import { DetailsSection } from "../../components/layouts/detailsSection/DetailsSection";
 
-import Footer from '../../components/layouts/footer/footer';
+// import Footer from '../../components/layouts/footer/Footer';
 
 
 const BookDetails = () => {
@@ -11,7 +11,9 @@ const BookDetails = () => {
         <section>
             <Navbar darkTheme={true} /> 
             <DetailsSection/>
-            <Footer />
+
+
+           {/* <Footer /> */}
         </section>
     )
 }

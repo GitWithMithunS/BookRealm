@@ -26,11 +26,9 @@
 }
 .book-detail-container{
     font-size: 1.5rem;
-
 }
 .book-detail-container p{
     padding: 1rem 0;
-
 }
 .book-description{
     line-height:1.7rem ;
@@ -41,7 +39,6 @@
     color: var(--primary-color);
     margin-bottom: 2rem;
 } */
-
 
 
 .deatil-section-container {
