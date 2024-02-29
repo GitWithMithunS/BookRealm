@@ -3,7 +3,6 @@ import './productListingCard.styles.css';
 import { Link } from 'react-router-dom';
 
 
-
 const ProductListingCard = ({ bookData }) => {
     return (
         <div className="product-listing-card">

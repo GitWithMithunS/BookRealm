@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react'
-import './detailssection.style.css'
-import { useParams, useNavigate } from 'react-router-dom'
-import { book } from '../../../util/BookData'
+import React, { useContext, useEffect, useState } from 'react';
+import './detailssection.style.css';
+import { useParams, useNavigate } from 'react-router-dom';
+import { book } from '../../../util/BookData';
 import { userContext, cartContext } from '../../../app';
 
 
@@ -15,7 +15,7 @@ export const DetailsSection = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    let newData = book.filter((book) => book._id == id)
+    let newData = book.filter((book) => book._id ===  parseInt(id))
     // console.log(newData[0])
     setbookdata(newData[0])     //[0] to get the first element/object of the newbook array
   }, [id])
@@ -24,8 +24,10 @@ export const DetailsSection = () => {
     // console.log("from handeladdclick",user)
     if (user) {
       //add to cart
-      console.log(cartItem)
-      setcartItem([...cartItem, bookdata])                       // '...' -> spread operator
+      setcartItem([...cartItem, bookdata])                                       // '...' -> spread operator
+      console.log("items in cart are", cartItem)
+      alert(`The book ${bookdata.title} is added ot the cart`)
+      navigate('/cart')
     } else {
       //redirect to login page
       navigate('/login')
@@ -39,7 +41,6 @@ export const DetailsSection = () => {
         <div className="flex-container">
           <div className="book-img-container">
             <img src={bookdata.image} alt="book" className='bookimg' />
-            {/* <img src={ProductImage} alt="product-listing" className="product-listing-image" /> */}
           </div>
           <div className="book-detail-container">
             <h2>{bookdata.title}</h2>

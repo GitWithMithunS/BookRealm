@@ -1,7 +1,19 @@
-import React from 'react'
+import React from "react";
 
-export default function Cartpage() {
-  return (
-    <div><h1>Cartpage</h1></div>
-  )
+import Footer from "../../components/layouts/footer/footer";
+import Navbar from "../../components/layouts/navbar/Navbar";
+import { CartItemContainer } from "../../components/layouts/cartitem-container/CartItemContainer";
+
+const CartPage = () => {
+    return (
+        <section>
+            <Navbar darkTheme={ true } />
+            
+            <CartItemContainer/>
+            
+            <Footer/>
+        </section>
+    )
 }
+
+export default CartPage;
