@@ -1,4 +1,4 @@
-.deatil-section-container{
+/* .deatil-section-container{
     padding-top:8rem
 }
 .flex-container{
@@ -40,4 +40,67 @@
     padding-top: 1rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
+} */
+
+
+
+.deatil-section-container {
+    padding-top: 8rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Added for responsiveness */
+    justify-content: space-between;
+}
+
+.book-img-container,
+.book-detail-container {
+    width: 100%; /* Adjusted for responsiveness */
+}
+
+.book-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-img-container img {
+    height: auto; /* Changed to auto for responsiveness */
+    width: auto; /* Adjusted for responsiveness */
+    max-height: 500px; /* Added for responsiveness */
+    border: 1px solid #ddd;
+    box-shadow: 7px 11px 13px 0px rgba(45, 11, 9, 0.56);
+    -webkit-box-shadow: 7px 11px 13px 0px rgba(45, 11, 9, 0.56);
+    -moz-box-shadow: 7px 11px 13px 0px rgba(45, 11, 9, 0.56);
+}
+
+.book-detail-container {
+    font-size: 1.5rem;
+    padding: 1rem; /* Added padding for better spacing */
+}
+
+.book-detail-container p {
+    padding: 1rem 0;
+}
+
+.book-description {
+    line-height: 1.7rem;
+}
+
+.book-detail-container h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        flex-direction: row; /* Reset flex-direction for larger screens */
+    }
+    .book-img-container,
+    .book-detail-container {
+        width: 48%; /* Adjusted for larger screens */
+    }
 }

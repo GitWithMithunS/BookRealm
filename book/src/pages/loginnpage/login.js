@@ -1,5 +1,4 @@
 import React from 'react'
-import './login.style.css'
 import authimg from '../../assets/authimg.png'
 import Navbar from '../../components/layouts/navbar/Navbar'
 import { AuthForm } from '../../components/form/authForm/AuthForm'
