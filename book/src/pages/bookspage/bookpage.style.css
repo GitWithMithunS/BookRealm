@@ -6,4 +6,11 @@
 .search-container h2{
     text-align: center;
     padding: 10px;
+}   
+@media only screen and (max-width: 768px) {
+
+h2{
+    font-size: 22px;
+    margin: 0px -20px;
+}
 }

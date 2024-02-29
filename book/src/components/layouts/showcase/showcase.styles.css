@@ -19,6 +19,7 @@
 .showcase-content{
     width: fit-content;
     z-index: 0;
+    margin: 15px;
 }
 
 .showcase-content h1, .showcase-content p{

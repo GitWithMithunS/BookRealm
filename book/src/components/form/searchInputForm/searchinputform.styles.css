@@ -80,13 +80,16 @@
     .search-input-form-container {
         flex-direction: column; 
         align-items: stretch; /* Stretch items to full width */
+        margin:0px -80px ;
     }
 
     .search-input {
+        font-size: larger;
         margin-bottom: 1rem; /* Add margin between input and button */
     }
 
     .search-button {
+        font-size: large;
         width: 100%; /* Make button full width */
     }
 }
