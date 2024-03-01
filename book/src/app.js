@@ -4,13 +4,12 @@ import fire from "./firebase/Firebase..js";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import HomePage from "./pages/homepage/homepage";
 import BooksPage from "./pages/bookspage/BooksPage.js";
-import Cartpage from "./pages/cartpage/Cartpage.js";
 import BookDetailsPage from "./pages/bookdetailspage/BookDetails.js";
 import { Signup } from "./pages/signuppage/signup.js";
 import { Login } from "./pages/loginnpage/login.js";
 import CartPage from "./pages/cartpage/Cartpage.js";
 import ScrollToTop from "./components/util/ScrollToTop";
-import SearchPage from "./pages/searchpage/SearchPage.js";
+import SearchPage from "./pages/searchpage/SearchPage";
 
 
 export const userContext = createContext({});
@@ -46,13 +45,14 @@ const App = () => {
 
 
     return (
+        <ScrollToTop>
         <userContext.Provider value={authenticateUser}>
             <cartContext.Provider value={{cartItem , totalAmount ,setcartItem}}>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/books" element={<BooksPage />} />
                     <Route path="/cart" element={<CartPage />} />
-                    <Route path="/search" element={<SearchPage />} />
+                    <Route path="/search" element={<SearchPage />} /> 
                     {/* <Route path="/search" element={<SearchPage />} /> */}
                     <Route path="/book-details/:id" element={<BookDetailsPage />} />
                     <Route path="/signup" element={<Signup />} />

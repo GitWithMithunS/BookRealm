@@ -10,17 +10,16 @@ import { userContext, cartContext } from '../../../app';
 export const DetailsSection = () => {
   const { id } = useParams(); //console.log(id)
   const [bookdata, setbookdata] = useState({})
-
   const user = useContext(userContext)
   const { cartItem, setcartItem } = useContext(cartContext)
 
   const navigate = useNavigate()
 
   useEffect(() => {
-//     let newData = book.filter((book) => book._id === id)
-    // console.log(newData[0])
-    setbookdata(newData[0])     //[0] to get the first element/object of the newbook array
-  })
+// //     let newData = book.filter((book) => book._id === id)
+//     // console.log(newData[0])
+//     setbookdata(newData[0])     //[0] to get the first element/object of the newbook array
+//   })
 
 
 //   const handleAddToCart = () => {
@@ -55,12 +54,14 @@ export const DetailsSection = () => {
   }
 
 
+
   return (
     <section className="deatil-section-container">
       <div className="container">
         <div className="flex-container">
             <div className="book-img-container">
                 <img src={bookdata.image} alt="book"  className='bookimg'/>
+                {/* <img src={ProductImage} alt="product-listing" className="product-listing-image" /> */}
                 {/* <img src={ProductImage} alt="product-listing" className="product-listing-image" /> */}
             </div>
             <div className="book-detail-container">
