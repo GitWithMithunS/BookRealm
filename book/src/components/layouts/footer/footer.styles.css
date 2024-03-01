@@ -7,6 +7,7 @@
     color: var(--white-color);
 }
 
+
 .footer-container p{
     color:var(--white-color);
     padding-top: 2rem;
@@ -48,7 +49,28 @@
 
 .form-submit:hover{
     background-color: var(--primary-color);
-    color: #333;
-    border-radius: 5px;
-   
+    color: white;
+    border-radius: 5px;  
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding-left: 20px;
+    }
+    .form-input{
+        height: 3rem;
+    }
+    .footer-form{
+        padding-top: 1rem;
+        width: 90%;
+    }
+    .container h2{
+        font-size: larger;
+    }
+    .form-input.querry{
+        height: 9rem;
+    }
+    .footer-container{
+        margin-top: 3rem;
+    }
 }

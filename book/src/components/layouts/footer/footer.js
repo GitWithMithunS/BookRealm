@@ -40,7 +40,7 @@ const Footer = () => {
 
                     <div className="form-group">
                         <label htmlFor="query" className="form-label">Query:</label>
-                        <textarea className="form-input" name="message" id="query" placeholder='Type your Query' required></textarea>
+                        <textarea className="form-input querry" name="message" id="query" placeholder='Type your Query' required></textarea>
                     </div>
 
                     <div className="form-group">
