@@ -1,8 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react'
-import './detailssection.style.css'
-import { useParams, useNavigate } from 'react-router-dom'
-import { book } from '../../../util/BookData'
-import { UserContext, CartContext } from '../../../app';
+
+import React, { useContext, useEffect, useState } from 'react';
+import './detailssection.style.css';
+import { useParams, useNavigate } from 'react-router-dom';
+import { book } from '../../../util/BookData';
+import { userContext, cartContext } from '../../../app';
 
 
 
@@ -42,8 +43,10 @@ export const DetailsSection = () => {
     // console.log("from handeladdclick",user)
     if (user) {
       //add to cart
-      console.log(cartItem)
-      setcartItem([...cartItem, bookdata])                       // '...' -> spread operator
+      setcartItem([...cartItem, bookdata])                                       // '...' -> spread operator
+      console.log("items in cart are", cartItem)
+      alert(`The book ${bookdata.title} is added ot the cart`)
+      navigate('/cart')
     } else {
       //redirect to login page
       navigate('/login')
