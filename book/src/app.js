@@ -8,8 +8,11 @@ import Cartpage from "./pages/cartpage/Cartpage.js";
 import BookDetailsPage from "./pages/bookdetailspage/BookDetails.js";
 import { Signup } from "./pages/signuppage/signup.js";
 import { Login } from "./pages/loginnpage/login.js";
+import CartPage from "./pages/cartpage/Cartpage.js";
 import ScrollToTop from "./components/util/ScrollToTop";
 import SearchPage from "./pages/searchpage/SearchPage";
+import SearchPage from "./pages/searchpage/SearchPage.js";
+
 
 export const userContext = createContext({});
 export const cartContext = createContext({});
@@ -19,6 +22,7 @@ const App = () => {
 
     const [authenticateUser, setauthenticateUser] = useState(null)
     const [cartItem, setcartItem] = useState([])
+    const [totalAmount, setTotalAmount] = useState(0);
 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
@@ -31,22 +35,28 @@ const App = () => {
         })
     }, [])
     
+
     useEffect(() => {
-     console.log(cartItem)
-    }, [cartItem])                                                
-                                                    // [] -> dependency (ny change in the dependency will trigger this)
-    
+
+        let total = 0;
+        cartItem.forEach((item) => {
+            total = total + parseInt(item.price);
+        })
+        setTotalAmount(total);
+    },[cartItem])
+
 
     return (
         <ScrollToTop>
         <userContext.Provider value={authenticateUser}>
-            <cartContext.Provider value={{cartItem , setcartItem}}>
+            <cartContext.Provider value={{cartItem , totalAmount ,setcartItem}}>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/books" element={<BooksPage />} />
                     <Route path="/cart" element={<Cartpage />} />
                     <Route path="/search" element={<SearchPage />} /> 
 
+                    <Route path="/cart" element={<CartPage />} />
                     <Route path="/search" element={<SearchPage />} />
                     {/* <Route path="/search" element={<SearchPage />} /> */}
                     <Route path="/book-details/:id" element={<BookDetailsPage />} />
