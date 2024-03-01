@@ -92,3 +92,22 @@ background: linear-gradient(90deg, rgba(239,198,77,1) 0%, rgba(45,11,9,1) 100%);
     transition: 0.2s ease-in;
     border: none;
 }
+
+@media screen and (max-width: 768px) {
+    .product-listing-details-container{
+        font-size:medium;
+    }
+    .product-listing-details-container h3{
+        font-size: large;
+    }
+    .btn-addcart:hover{
+        background-color: #fff;
+        box-shadow: 4px 4px 7px #ddd;
+        transition: 0.2s ease-in;
+        border: none;
+    }
+    .product-listing-card {
+        margin-bottom:-20px;
+
+    }
+}
